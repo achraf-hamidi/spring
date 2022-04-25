@@ -15,7 +15,7 @@ public class LivreService {
     @Autowired
     private LivreRepo repo;
     public List<Livre> listAll() {
-        return repo.findAll();
+         return repo.findByOrderByTitreAsc();
     }
 
     public void save(Livre livre) {

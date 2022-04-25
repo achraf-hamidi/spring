@@ -29,6 +29,8 @@ public class Livre {
 
     private boolean estDisponible ;
     @NotNull
+    @ElementCollection
+    @OrderBy
     private String Titre;
     @NotNull
     private String maisonEdition;
